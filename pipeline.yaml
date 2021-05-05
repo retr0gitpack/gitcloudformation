@@ -7,10 +7,10 @@ Parameters:
   # "NoEcho" is set to true, for security, so token won't be visible when examining the resulting stack
   GitHubOAuthToken:
     Type: String
+    Default: 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
     NoEcho: true
     MinLength: 40
     MaxLength: 40
-    AllowedPattern: '[a-z0-9]*'
 
   # *** The remaining parameters should either be:
   # - overridden via changing "Default" here (PREFERABLE, since then they're in source control)
@@ -19,17 +19,17 @@ Parameters:
   # *** The owner of the Github repo for this application.
   GitHubOwner:
     Type: String
-    Default: symphoniacloud
+    Default: retr0gitpack
     AllowedPattern: "[A-Za-z0-9-]+"
 
   GitHubRepo:
     Type: String
-    Default: github-codepipeline
+    Default: gitcloudformation
     AllowedPattern: "[A-Za-z0-9-]+"
 
   GitHubBranch:
     Type: String
-    Default: master
+    Default: main
     AllowedPattern: "[A-Za-z0-9-]+"
 
   # *** The stack name for the actual application we're deploying
