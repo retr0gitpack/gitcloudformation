@@ -66,5 +66,3 @@ If your company is looking for help using CodePipeline, CloudFormation, or archi
 ## TODO
 
 * Refine IAM permissions in pipeline.yaml
-
-testpush
